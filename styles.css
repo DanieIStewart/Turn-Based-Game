@@ -1,0 +1,211 @@
+h1{
+	color:black;
+	/* text-align : center; */
+}
+body {
+  font-family: Tahoma;
+}
+
+button{
+  width:100px;
+  height:100px;
+  vertical-align: middle;
+  text-align: center;
+  
+}
+
+.hide{
+  display: none;
+}
+
+.fight-btns{
+  padding-left: 30%;
+  
+}
+.round{
+  border-radius: 20%;
+}
+.black{
+  background-color: black;
+}
+
+.main {
+  border: 2px solid black;
+  border-radius: 7px;
+  display: grid;
+  max-width: 700px;
+  max-height: 700px;
+  position: relative;
+  grid-template: repeat(10, 1fr)/repeat(10, 1fr);
+  margin: 10px auto;
+  
+  background-image: url("images/ground2.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+.grid-item {
+  outline: 1px solid rgba(0,233,0,0.3);
+  background-image:url("http://www.stickpng.com/assets/images/58bf22fce443f41d77c734dd.png");
+  border-radius: 7px;
+  width: 70px;
+  height: 70px;
+
+}
+.weapon-1 {
+  background-image:url("images/Daga.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 40px 40px;
+  margin: auto;
+}
+
+.weapon-2 {
+  background-image:url("images/Espada.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 70px 70px;
+  margin: auto;
+}
+
+.weapon-3 {
+  background-image:url("images/Hacha.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 70px 70px;
+  margin: auto;
+}
+
+.weapon-4 {
+  background-image:url("images/Lanza.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 70px 70px;
+  margin: auto;
+}
+.player-1 {
+  background-image: url("images/mario.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 60px 70px;
+  margin: auto;
+}
+
+.player-2 {
+  background-image: url("images/turtle.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 50px 70px;
+  margin: auto;
+}
+.frostbite{
+  background-image: url("images/hielo.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 70px 70px;
+  margin: auto;
+  z-index: 1;
+}
+
+.shield{
+  background-image: url("images/shield.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 70px 70px;
+  margin: auto;
+}
+
+.block, block1, block2, block3, block4 {
+  background-image: url("images/block1.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 60px 70px;
+  margin: auto;
+}
+
+.dimmed{
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 0.6px solid blue;
+}
+.dimmedP2{
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 1px solid purple;
+}
+
+.pink{
+  color: pink;
+}
+
+/* #battleScreen{
+  display: flex;
+  background-color:rgba(41, 75, 125);
+  text-emphasis: center;
+} */
+
+#fight-title{
+  font-size: 3rem;
+  color: aqua; 
+  text-decoration: underline;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fightScreen{
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+
+#battleScreen img{
+  /* display: flex; */
+  /* padding-left: 20%; */
+  /* width: fit-content; */
+} 
+
+.fight-img{
+  display: inline;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+#playerFighrStats1{
+  width: 40%;
+  text-align: center;
+  padding-top: 25%;
+  background-color: aqua;
+}
+
+#playerFighrStats2{
+  width: 40%;
+  text-align: center;
+  padding-top: 25%;
+  background-color: blueviolet;
+}
+
+.battleScreenImg{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  display: inline-flex;
+}
+
+#button:hover {
+  background: gray;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+img{
+  width: 40%;
+  /* height: 40%; */
+  /* border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px; */
+}
+

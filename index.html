@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Turned Based Game Using JavaScript</title>
+	 
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body >
+  <div id="main">
+    <div id="player1Status">
+       <img src='images/MarioStatus.png' >
+       <h1>Mario</h1>
+       <h2>Health:<span id="playersHealth"> 100</span></h2>
+       <h2>Weapon: <span id="playersWeapon1"></span></h2>
+     </div>
+	
+			<div class="main">
+               
+      </div>
+      
+    <div id="player2Status">
+      <img src='images/BowserStatus.png'>
+      <h1>Bowser</h1>
+      <h2>Health:<span id="playersHealth"> 100</span></h2>
+      <h2>Weapon: <span id="playersWeapon2"></span></h2>
+   </div>
+</div>
+
+<!-- Fight screen -->
+
+<div id="battleScreen" style="display: none ;">
+  <div id="playerFighrStats1"style="display: inline-block;">
+      <!-- <span id="player1WeaponImg"></span> -->
+      <h1 class="resultMessageP1"></h1>
+      <img id="player1WeaponImg" class="battleScreenImg" />
+      <img src='images/MarioStatus.png' class="fight-img">
+      <h1 class="fightScreen">Mario</h1>
+      <h2 class="fightScreen">Health:<span id="displayHealth1"> 100</span></h2>
+      <h2 class="fightScreen">Weapon:<span id="displayWeapon1"></span></h2>
+      <div class="fight-btns">
+          <button class="round" id="attackBtnp1">Fight</button>
+          <button class="round" id="defendBtnp1">Defend</button>
+      </div>
+  </div>
+  <button style="display: none;" class="round"  id="resetBtn">Reset</button>
+
+  
+  <div id="playerFighrStats2" style="display: inline-block;">
+    <h1 class="resultMessageP2"></h1>
+    <img id="player2WeaponImg"  class="battleScreenImg"/>
+      <img src='images/BowserStatus.png' class="fight-img">
+      <h1 class="fightScreen">Bowser</h1>
+      <h2 class="fightScreen">Health:<span id="displayHealth2"> 100</span></h2>
+      <h2 class="fightScreen">Weapon:<span id="displayWeapon2"></span></h2>
+      <div class="fight-btns">
+        <button class="round" id="attackBtnp2">Fight</button>
+        <button class="round" id="defendBtnp2">Defend</button>
+    </div>
+  </div>
+</div>
+			<!-- <button id="button" onclick="generateGame();">Start Game</button> -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>
